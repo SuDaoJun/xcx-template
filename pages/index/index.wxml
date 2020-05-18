@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class='container'>
+  <wux-navbar title='小程序' backPage='{{false}}'>
+  </wux-navbar>
+  <view class="wrap-noFooterNav">
+    <view class='icon-pic iconfont iconUnunited'>
+    </view>
+    <view class='page-login'>
+      <text data-index='0'>{{userInfo.nickName}}</text>
+    </view>
+    <view class='btn-click' bindtap='home'>
+      登录
+    </view>
+    <view class='agree-info'>
+      登录即表明您同意我们的<text>服务协议</text>
+    </view>
+  </view>
+</view>

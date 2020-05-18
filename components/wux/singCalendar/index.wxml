@@ -1,0 +1,22 @@
+<view class="calendar custom-calendar">
+	<view class='title'>
+    <wux-icon bindtap='gotoPreMonth' class='icon-show' type='ios-arrow-back' size='24' color='#725555'></wux-icon>
+		<view class='current'>{{currentYear}}年{{currentMonth>9?currentMonth:'0'+currentMonth}}月</view>
+    <wux-icon bindtap='gotoNextMonth' class='icon-show' type='ios-arrow-forward' size='24' color='#725555'></wux-icon>
+	</view>
+	<view class='content'>
+    <view 
+			wx:for="{{weekArr}}"
+			wx:key="{{index}}"
+			class="gray"
+		>{{item}}</view>
+    <view 
+			wx:for="{{allArr}}" 
+			wx:key="{{index}}"
+      data-item = '{{item}}'
+      style='background: {{item.month == "current" && currentDate == item.date && currentYear === timeObj.year && currentMonth === timeObj.month?"#FFDBDB":""}}'
+			class="{{item.month == 'current' ? (item.checked?'current-date':'') : 'gray'}}"
+      bindtap="selectDate"
+		>{{item.date}}</view>
+	</view>
+</view>

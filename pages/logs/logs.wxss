@@ -1,0 +1,6 @@
+.wrap-navBar{
+  padding-top: 60rpx;
+}
+.log-item {
+  margin: 10rpx;
+}

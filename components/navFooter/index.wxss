@@ -1,0 +1,30 @@
+/* components/navfooter/index.wxss */
+@import "../../utils/font.wxss";
+.nav-footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 104rpx;
+  background-color: #fff;
+  border-top: 1rpx solid #F2F2F2;
+}
+.footer-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #CBCDD4;
+}
+.icon-show{
+  margin-bottom: 6rpx;
+  font-size: 36rpx;
+}
+.footer-active{
+  color: #606060;
+}
+.footer-active .icon-show{
+  color: #FF8E8E;
+}

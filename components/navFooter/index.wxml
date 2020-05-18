@@ -1,0 +1,9 @@
+<!--components/navfooter/index.wxml-->
+<view class='nav-footer'>
+  <block wx:for='{{tabList}}' wx:key='name'>
+    <view class='footer-box  {{activePath === item.path?"footer-active":""}}' data-path='{{item.path}}' bindtap="pathSelect">
+      <view class='iconfont {{item.icon}} icon-show'></view>
+      <text>{{item.name}}</text>
+    </view>
+  </block>
+</view>

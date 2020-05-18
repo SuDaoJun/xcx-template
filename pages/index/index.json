@@ -1,0 +1,7 @@
+{
+  "disableScroll": true,
+  "usingComponents": {
+    "wux-navbar": "../../components/wux/navbar/index",
+    "wux-icon": "../../components/wux/icon/index"
+  }
+}

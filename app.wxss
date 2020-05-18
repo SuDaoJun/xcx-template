@@ -1,0 +1,54 @@
+/**app.wxss**/
+@import "./utils/font.wxss";
+page{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 24rpx;
+}
+view{
+  box-sizing: border-box;
+  font-size: 24rpx;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+}
+.wrap-navBar{
+  width: 100vw;
+  height: calc(100vh - 104rpx - 64px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap-noHeaderNav{
+  width: 100vw;
+  height: calc(100vh - 104rpx);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap-noFooterNav{
+  width: 100vw;
+  height: calc(100vh - 64px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap-navBar>view, .wrap-noHeaderNav>view, .wrap-noFooterNav>view{
+  flex-shrink: 0;
+}
+image{
+  width: 100%;
+  height: auto;
+}
+.no-wrap{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,12 @@
+<!--logs.wxml-->
+<view class="container">
+  <wux-navbar title='日志'>
+    <wux-icon slot="left" type="ios-arrow-back" size="24" />
+  </wux-navbar>
+  <view class="wrap-navBar">
+    <block wx:for="{{logs}}" wx:for-item="log" wx:key='logs'>
+      <text class="log-item">{{index + 1}}. {{log}}</text>
+    </block>
+  </view>
+  <nav-footer />
+</view>

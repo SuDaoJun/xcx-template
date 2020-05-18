@@ -1,0 +1,39 @@
+/**index.wxss**/
+.wrap-noFooterNav{
+  padding-top: 104rpx;
+}
+.icon-pic{
+  width: 650rpx;
+  height: 776rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 64rpx;
+  color: #606060;
+  font-size: 165rpx;
+  border: 1rpx solid #999;
+}
+.page-login{
+  font-size: 32rpx;
+  color: #606060;
+  font-weight:600;
+  margin-bottom: 44rpx;
+  letter-spacing: 4rpx;
+}
+.btn-click{
+  width: 560rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  background:#47D9A5;
+  border-radius: 20rpx;
+  font-size: 32rpx;
+  color: #fff;
+  margin-bottom: 32rpx;
+}
+.agree-info{
+  color: #CBCDD4;
+}
+.agree-info text{
+  color: #47D9A5;
+}

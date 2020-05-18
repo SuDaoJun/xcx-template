@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "subPackages": [
+    {
+      "root": "pages/subPage/",
+      "pages": [
+        "test/test"
+      ]
+    }
+  ],
+  "window": {
+    "navigationStyle": "custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}
